@@ -3,8 +3,7 @@
 
 | Command | Description|
 | --- | --- |
-| `hg add filename1 filenaem2` | Begin tracking changes to files or folders. | 
-Unlike git, in mercurial the `add` command is only used for *new* files, <br/> not files you want to begin tracking. |
+| `hg add filename1 filenaem2` | Begin tracking changes to files or folders.<br/>----------------------------------------------------<br/>Unlike git, in mercurial the `add` command is only used for *new* files, not files you want to begin tracking. |
 | |
 | `hg commit -m "commit message"` | Commit all outstanding changes reported by `hg status` into the repository | 
 The state of the working directory relative to its parents is recorded as a new changeset (revision). |
