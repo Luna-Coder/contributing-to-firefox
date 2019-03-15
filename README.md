@@ -11,3 +11,6 @@
 | |
 | `hg pull central` | Pull changes from a remote repository to a local one. | In our case, `mozilla-central` is the remote repository. Since this is the only repository we work with, `central` is optional. |
 | |
+| `hg pull central -u` | The `-u` flag is used to pull and update to the new branch head in one step. | In mercurial, pulling changes and updating is a two-step process, this method makes it less verbose. |
+| |
+| `hg update central` | Update working directory or navigate to different revision. Useful when working on multiple bugs and need to switch between them. | May also appear as the alias `hg up`. In our case, we update to the `central` branch after pulling the changes. |
