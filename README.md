@@ -190,7 +190,7 @@ tip - The changeset with the highest revision number. It is the changeset most r
 patch - All diffs between two revisions.
 
 # Arcanist Overview #
-
+Arcanist is a wrapper script that sits on top of other tools (e.g., Differential, linters, unit test frameworks, git, Mercurial, and SVN) and provides a simple command-line API to manage code review and some related revision control operations.
 
 # Arcanist Commands #
 
