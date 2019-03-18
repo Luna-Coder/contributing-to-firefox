@@ -2,8 +2,23 @@
 
 ![conduit diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/Untitled%20Diagram.jpg "Diagram Text")
 
-Conduit:
-Conduit is the set of systems involved in submitting code to mozilla-central, the Mercurial repository that contains all the code required to build Firefox. These systems handle everything from posting a patch for review up to landing it in mozilla-central. The applications are a mix of third-party tools, extensions to these tools, and custom applications.
+### Conduit: ###
+Conduit is the set of systems involved in submitting code to `mozilla-central`, the Mercurial repository that contains all the code required to build Firefox. These systems handle everything from posting a patch for review up to landing it in mozilla-central.
+
+### Mercurial: ###
+Mercurial is a free, distributed source control management tool.
+
+### Arcanist: ###
+Arcanist is the command-line interface to Phabricator, mainly used to submit patches for review via the Differential tool.
+
+### moz-phab: ###
+moz-phab is Mozilla's custom command-line tool that improves on Arcanist’s limited support for commit series, as well as providing other conveniences, including the parsing of bug IDs and reviewers from commit messages.
+
+### Phabricator: ###
+Phabricator is a suite of web applications which make it easier to build software, particularly when working with teams. 
+
+### Differential: ###
+Differential is Phabricator’s code-review tool.
 
 
 **`hg add filename1 filename2`**
