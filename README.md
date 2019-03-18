@@ -8,22 +8,22 @@ The purpose for this guide is to give new contributors a high-level overview of 
 
 ![conduit diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/conduit-diagram.png "Diagram Text")
 
-### Conduit:
+### Conduit
 Conduit is the set of systems involved in submitting code to `mozilla-central`, the Mercurial repository that contains all the code required to build Firefox. These systems handle everything from posting a patch for review up to landing it in mozilla-central.
 
-### Mercurial:
+### Mercurial
 Mercurial is a free, distributed source control management tool.
 
-### Arcanist:
+### Arcanist
 Arcanist is the command-line interface to Phabricator, mainly used to submit patches for review via the Differential tool.
 
-### moz-phab:
+### moz-phab
 moz-phab is Mozilla's custom command-line tool that improves on Arcanist’s limited support for commit series, as well as providing other conveniences, including the parsing of bug IDs and reviewers from commit messages.
 
-### Phabricator:
+### Phabricator
 Phabricator is a suite of web applications which make it easier to build software, particularly when working with teams. 
 
-### Differential:
+### Differential
 Differential is Phabricator’s code-review tool.
 
 ## Mercurial Overview
@@ -287,7 +287,7 @@ They specify who they want to review it. The change itself is called a "Differen
     
 - Once everything is satisfied, some reviewer accepts the change and the author pushes it to the upstream.
 
-# hg status codes:
+# `hg status` Codes:
 
 `!` = Missing (deleted by non-hg command, but still tracked)
 
@@ -307,7 +307,7 @@ They specify who they want to review it. The change itself is called a "Differen
 
 `R` = Removed
 
-# hg wip indicators:
+# `hg wip` Indicators:
 `@` = current working directory/revision
 
 Yellow Underline = bookmarks
