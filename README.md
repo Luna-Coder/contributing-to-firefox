@@ -40,7 +40,6 @@ It may be helpful to visualize it using the following diagram.
 _Note_: Mercurial does not have a staging area.
 
 \
-
 ![gitvsmercurial diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/gitvsmercurial.png "Diagram 2 Text")
 
 
