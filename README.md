@@ -1,3 +1,10 @@
+<style>
+  code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+</style>
+
 # contributing-to-firefox
 
 
