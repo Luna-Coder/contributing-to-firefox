@@ -1,33 +1,33 @@
-# contributing-to-firefox
+# Contributing To The Firefox Repository (mozilla-central)
 
 ![conduit diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/Untitled%20Diagram.jpg "Diagram Text")
 
-### Conduit: ###
+### Conduit:
 Conduit is the set of systems involved in submitting code to `mozilla-central`, the Mercurial repository that contains all the code required to build Firefox. These systems handle everything from posting a patch for review up to landing it in mozilla-central.
 
-### Mercurial: ###
+### Mercurial:
 Mercurial is a free, distributed source control management tool.
 
-### Arcanist: ###
+### Arcanist:
 Arcanist is the command-line interface to Phabricator, mainly used to submit patches for review via the Differential tool.
 
-### moz-phab: ###
+### moz-phab:
 moz-phab is Mozilla's custom command-line tool that improves on Arcanist’s limited support for commit series, as well as providing other conveniences, including the parsing of bug IDs and reviewers from commit messages.
 
-### Phabricator: ###
+### Phabricator:
 Phabricator is a suite of web applications which make it easier to build software, particularly when working with teams. 
 
-### Differential: ###
+### Differential:
 Differential is Phabricator’s code-review tool.
 
-## Mercurial Overview ##
+## Mercurial Overview
 * Every working directory is paired with a private copy of the history.
 * The store contains the complete history of the project.
 * Mercurial considers the head with the highest revision number the tip of the repository.
 * Each unmerged branch creates a new head in the revision history.
 * When you commit, the state of the working directory relative to its parents is recorded as a new changeset (also called a new revision).
 
-# Mercurial Workflow vs Git Workflow #
+# Mercurial Workflow vs Git Workflow
 Coming from a git/GitHub workflow to the mercurial/arcanist/phabricator workflow can be quite confusing at the beginning.
 
 It may be helpful to visualize it using the following diagram. 
@@ -37,7 +37,7 @@ Note: Mercurial does not have a staging area.
 ![gitvsmercurial diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/gitvsmercurial.png "Diagram 2 Text")
 
 
-# Frequently Used Mercurial Commands #
+# Frequently Used Mercurial Commands
 
 **`hg add filename1 filename2`**
 \- Begin tracking changes to files or folders.
@@ -180,7 +180,7 @@ Note: Mercurial does not have a staging area.
 * visit link for more information https://www.mercurial-scm.org/doc/hg.1.html#strip
 
 
-# Mercurial Terminology #
+# Mercurial Terminology
 repository - A collection of revisions.
 
 revision - A state of the repository at some point in time.
@@ -199,10 +199,10 @@ tip - The changeset with the highest revision number. It is the changeset most r
 
 patch - All diffs between two revisions.
 
-# Arcanist Overview #
+# Arcanist Overview
 Arcanist is a wrapper script that sits on top of other tools (e.g., Differential, linters, unit test frameworks, git, Mercurial, and SVN) and provides a simple command-line API to manage code review and some related revision control operations.
 
-# Arcanist Commands #
+# Arcanist Commands
 
 **`arc help`**
 \- Displays detailed help about available commands
@@ -238,7 +238,7 @@ Arcanist is a wrapper script that sits on top of other tools (e.g., Differential
 \- Closes a revision from the CLI without going through the web UI.
 
 
-# Mercurial Commit Message Format #
+# Mercurial Commit Message Format
 "Bug 1234567 - Implement feature XYZ. r=name,name2!"
 
 `Bug 1234567` - The number of the bug in bugzilla.
@@ -252,7 +252,7 @@ Arcanist is a wrapper script that sits on top of other tools (e.g., Differential
 _Note:_ The whole message must be enclosed in double quotations `"" ""`, single quotations and backticks will not work.
 
 
-# Phabricator Overview #
+# Phabricator Overview
 Phabricator supports two code review workflows, "review" (pre-push) and "audit" (post-push).
 
 The review workflow occurs in Differential, before changes are published.
@@ -281,7 +281,7 @@ They specify who they want to review it. The change itself is called a "Differen
     
 - Once everything is satisfied, some reviewer accepts the change and the author pushes it to the upstream.
 
-# hg status codes: #
+# hg status codes:
 
 `!` = Missing (deleted by non-hg command, but still tracked)
 
@@ -301,7 +301,7 @@ They specify who they want to review it. The change itself is called a "Differen
 
 `R` = Removed
 
-# hg wip indicators: #
+# hg wip indicators:
 `@` = current working directory/revision
 
 Yellow Underline = bookmarks
