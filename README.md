@@ -35,3 +35,13 @@ The `-u` flag is used to pull and update to the new branch head in one step.
 Update working directory or navigate to different revision. Useful when working on multiple bugs and need to switch between them.
 * May also appear as the alias `hg up`. 
 * In our case, we update to the `central` branch after pulling the changes.
+
+\
+`hg update --clean`
+
+* The `--clean` flag discards uncommitted changes.
+* Useful if you want to cancel modifications made to files that have not been committed.
+
+\
+`hg update tip`
+* Update work to match `tip`.
