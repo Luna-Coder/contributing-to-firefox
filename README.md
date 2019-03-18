@@ -31,53 +31,53 @@
 
 \
 `hg update central`
-
-\- Update working directory or navigate to different revision. Useful when working on multiple bugs and need to switch between them.
+\- Update working directory or navigate to different revision. 
 
 * May also appear as the alias `hg up`. 
+* Useful when working on multiple bugs and need to switch between them.
 * In our case, we update to the `central` branch after pulling the changes.
 
 \
 `hg update --clean`
-The `--clean` flag discards uncommitted changes.
+\- The `--clean` flag discards uncommitted changes.
 
 * Useful if you want to cancel modifications made to files that have not been committed.
 
 \
 `hg update tip`
-Update work to match `tip`.
+\- Update work to match `tip`.
 
 \
 `hg update <REV>`
-Update work to specified revision.
+\- Update work to specified revision.
 
 * <REV> can be a Revision ID (####) or SHA-1 (#a#b#c#).
   
 \
 `hg wip`
-Displays a colorful tree view of the work in progress of changesets relevant to you.
+\- Displays a colorful tree view of the work in progress of changesets relevant to you.
 
 * This command is a variation of the `hg log` command. Normally used in conjunction with `hg update` to view revisions to navigate to.
 
 \
 `hg status [filename]`
-Show changed files in the working directory or in the file if a filename is given.
+\- Show changed files in the working directory or in the file if a filename is given.
 
 * See hg status codes for info regarding the meaning of the prefix symbols.
 
 \
 `hg status --change <REV>`
-List the changed files of a given revision.
+\- List the changed files of a given revision.
 
 \
 `hg revert [filename]`
-Discards changes and restores files to their unmodified state.
+\- Discards changes and restores files to their unmodified state.
 
 * The modified file is saved as `filename.orig` and `hg status` will list it as not tracked `? filename.orig`
 
 \
 `hg rebase`
-Command to move changeset (and descendants) to a different branch.
+\- Command to move changeset (and descendants) to a different branch.
 
 * usually used after ‘hg pull central’ to place a changeset on top of the latest changes.
 
@@ -91,86 +91,87 @@ Command to move changeset (and descendants) to a different branch.
   
 \
 `hg forget filename`
-Mark the specified file(s) so they will no longer be tracked after the next commit.
+\- Mark the specified file(s) so they will no longer be tracked after the next commit.
 
 * This only removes files from the current branch, not from the entire project history, and it does not delete them from the working directory.
 
 \
 `hg remove filename`
-Stop tracking and remove the specified files from the current branch on the next commit.
+\- Stop tracking and remove the specified files from the current branch on the next commit.
 
 * May also appear as the alias `hg rm`.
 
 \
 `hg diff [filename]`
-List tracked file changes or changes to a file if a file is specified.
+\- List tracked file changes or changes to a file if a file is specified.
 
 \
 `hg diff -r <REV> -r <REV> [filename]`
-Show differences between revisions for the specified file(s) or directory.
+\- Show differences between revisions for the specified file(s) or directory.
 
 * Displays the file names along with any uncommitted changes you have made to a file.
 
 \
 `hg log [file]`
-Show revision history of entire repository or files.
+\- Show revision history of entire repository or files.
 
 * By default is prints revision number, changeset id, tags, user, date/time, and summary for each commit.
 
 \
 `hg summary`
-Generates a brief summary of the working directory state, including parents, branch, commit status, phase and available updates.
+\- Generates a brief summary of the working directory state, including parents, branch, commit status, phase and available updates.
 
 \
 `hg heads [<REV>]`
-With no arguments, show all open branch heads in the repository. Branch heads are changesets that have no descendants on the same branch.
+\- With no arguments, show all open branch heads in the repository. 
 
+* Branch heads are changesets that have no descendants on the same branch.
 * If one or more <REV> is given, only open branch heads on the branches associated with the specified changesets are shown.
 
 \
 `hg histedit`
-interactive history editing
+\- Interactive history editing
 
 * visit link for more information https://www.mercurial-scm.org/doc/hg.1.html#histedit
 
 \
 `hg strip <REV>`
-The strip command removes the specified changesets and all their descendants. from history.
+\- The strip command removes the specified changesets and all their descendants. from history.
 
 * visit link for more information https://www.mercurial-scm.org/doc/hg.1.html#strip
 
 
 \
 `arc help`
-Displays detailed help about available commands
+\- Displays detailed help about available commands
 
 \
 `arc help [command]`
-Detailed information about a specific command
+\- Detailed information about a specific command
 
 \
 `arc diff`
-Send your code to Differential for review.
+\- Send your code to Differential for review.
 
 * Alternatively the `moz-phab` command is available.
 
 \
 `arc diff --create`
-force create a revision in the working copy.
+\- Force create a revision in the working copy.
 
 \
 `arc diff --update <REV>`
-Force update a specific revision.
+\- Force update a specific revision.
 
 \
 `arc which`
-Displays what `arc` believes to be in the working copy.
+\- Displays what `arc` believes to be in the working copy.
 
 \
 `arc list`
-Show pending revision information.
+\- Show pending revision information.
 
 \
 `arc close-revision`
-Closes a revision from the CLI without going through the web UI.
+\- Closes a revision from the CLI without going through the web UI.
 
