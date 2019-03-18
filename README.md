@@ -27,6 +27,13 @@ Differential is Phabricator’s code-review tool.
 * Each unmerged branch creates a new head in the revision history.
 * When you commit, the state of the working directory relative to its parents is recorded as a new changeset (also called a new revision).
 
+# Mercurial Workflow vs Git Workflow #
+Coming from a git/GitHub workflow to the mercurial/arcanist/phabricator workflow can be quite confusing at the beginning.
+
+It may be helpful to visualize it using the following diagram. 
+
+Note: Mercurial does not have a staging area.
+
 # Frequently Used Mercurial Commands #
 
 **`hg add filename1 filename2`**
