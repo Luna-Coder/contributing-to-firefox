@@ -6,7 +6,7 @@ The purpose for this guide is to give new contributors a high-level overview of 
 
 ---
 
-![conduit diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/Untitled%20Diagram.jpg "Diagram Text")
+![conduit diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/conduit-diagram.png "Diagram Text")
 
 ### Conduit:
 Conduit is the set of systems involved in submitting code to `mozilla-central`, the Mercurial repository that contains all the code required to build Firefox. These systems handle everything from posting a patch for review up to landing it in mozilla-central.
