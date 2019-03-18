@@ -189,7 +189,11 @@ tip - The changeset with the highest revision number. It is the changeset most r
 
 patch - All diffs between two revisions.
 
-\
+# Arcanist Overview #
+
+
+# Arcanist Commands #
+
 **`arc help`**
 \- Displays detailed help about available commands
 
@@ -222,4 +226,67 @@ patch - All diffs between two revisions.
 \
 **`arc close-revision`**
 \- Closes a revision from the CLI without going through the web UI.
+
+
+# Mercurial Commit Message Format #
+"Bug 1234567 - Implement feature XYZ. r=name,name2!"
+
+Bug 1234567 - The number of the bug in bugzilla.
+
+- Implement feature XYZ. - The commit message.
+
+r=name - The short form to request a review.
+
+! - This makes the review a blocking review.
+
+
+# Phabricator Overview #
+Phabricator supports two code review workflows, "review" (pre-push) and "audit" (post-push).
+
+The review workflow occurs in Differential, before changes are published.
+
+The audit workflow occurs in Diffusion, after changes are published.
+
+
+In general, review is normally a blocking workflow: authors usually can not publish changes until review completes and reviewers are satisfied.
+
+In contrast, audit is normally a nonblocking workflow: changes usually move forward by default.
+
+
+For our purpose of contributing to the mozilla-central repository we focus only on the "review" (pre-push) workflow.
+
+Code review in Phabricator is a lightweight, asynchronous web-based process.
+If you are familiar with GitHub, it is similar to how pull requests work:
+
+- An author prepares a change to a codebase, then sends it for review. 
+They specify who they want to review it. The change itself is called a "Differential Revision".
+    
+- The reviewers receive an email asking them to review the change.
+  
+- The reviewers inspect the change and either discuss it, approve it, or request changes (e.g., if they identify problems or bugs).
+    
+- In response to feedback, the author may update the change (e.g., fixing the bugs or addressing the problems).
+    
+- Once everything is satisfied, some reviewer accepts the change and the author pushes it to the upstream.
+
+# hg status codes: #
+
+! = Missing (deleted by non-hg command, but still tracked)
+? = Not tracked
+A = Added
+C = Clean
+D = Deleted
+I = Ignored
+M = Modified
+U = Unknown
+R = Removed
+
+# hg wip indicators: #
+@ = current working directory/revision
+Yellow Underline = bookmarks
+Yellow = branch/tag
+Green = draft
+Red = here
+Blue = public
+Magenta = user
 
