@@ -2,6 +2,9 @@
 
 ![conduit diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/Untitled%20Diagram.jpg "Diagram Text")
 
+Conduit:
+Conduit is the set of systems involved in submitting code to mozilla-central, the Mercurial repository that contains all the code required to build Firefox. These systems handle everything from posting a patch for review up to landing it in mozilla-central. The applications are a mix of third-party tools, extensions to these tools, and custom applications.
+
 
 **`hg add filename1 filename2`**
 \- Begin tracking changes to files or folders.
