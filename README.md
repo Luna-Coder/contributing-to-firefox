@@ -26,6 +26,8 @@ Phabricator is a suite of web applications which make it easier to build softwar
 ### Differential
 Differential is Phabricator’s code-review tool.
 
+---
+
 ## Mercurial Overview
 * Every working directory is paired with a private copy of the history.
 * The store contains the complete history of the project.
@@ -257,6 +259,7 @@ Magenta = user
 
 `patch` - All diffs between two revisions.
 
+---
 
 ## Arcanist Overview
 Arcanist is a wrapper script that sits on top of other tools (e.g., Differential, linters, unit test frameworks, git, Mercurial, and SVN) and provides a simple command-line API to manage code review and some related revision control operations.
@@ -297,6 +300,7 @@ Arcanist is a wrapper script that sits on top of other tools (e.g., Differential
 **`arc close-revision`**
 \- Closes a revision from the CLI without going through the web UI.
 
+---
 
 ## Phabricator Overview
 Phabricator supports two code review workflows, "review" (pre-push) and "audit" (post-push).
