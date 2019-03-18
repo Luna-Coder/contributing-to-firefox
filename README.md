@@ -361,3 +361,5 @@ https://www.mercurial-scm.org/wiki/Tutorial
 https://phabricator.services.mozilla.com/book/phabricator/article/introduction/
 
 https://github.com/mozilla-conduit/review
+
+https://moz-conduit.readthedocs.io/en/latest/
