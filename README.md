@@ -35,7 +35,11 @@ Differential is Phabricator’s code-review tool.
 
 # Mercurial Workflow vs Git Workflow
 Coming from a git/GitHub workflow to the mercurial/arcanist/phabricator workflow can be quite confusing at the beginning.
-It may be helpful to visualize it using the following diagram. _Note_: Mercurial does not have a staging area.
+It may be helpful to visualize it using the following diagram.
+
+_Note_: Mercurial does not have a staging area.
+
+\
 
 ![gitvsmercurial diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/gitvsmercurial.png "Diagram 2 Text")
 
