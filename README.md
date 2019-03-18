@@ -34,7 +34,7 @@ It may be helpful to visualize it using the following diagram.
 
 Note: Mercurial does not have a staging area.
 
-![gitvsmercurial diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/contributing-to-firefox/gitvsmercurial.png "Diagram 2 Text")
+![gitvsmercurial diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/gitvsmercurial.png "Diagram 2 Text")
 
 
 # Frequently Used Mercurial Commands #
