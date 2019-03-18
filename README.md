@@ -33,7 +33,7 @@ Differential is Phabricator’s code-review tool.
 * Each unmerged branch creates a new head in the revision history.
 * When you commit, the state of the working directory relative to its parents is recorded as a new changeset (also called a new revision).
 
-\
+
 ## Mercurial Workflow vs Git Workflow
 Coming from a git/GitHub workflow to the mercurial/arcanist/phabricator workflow can be quite confusing at the beginning.
 It may be helpful to visualize it using the following diagram.
@@ -43,7 +43,7 @@ _Note_: Mercurial does not have a staging area.
 \
 ![gitvsmercurial diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/gitvsmercurial.png "Diagram 2 Text")
 
-\
+
 ## Mercurial Commands
 
 **`hg add filename1 filename2`**
@@ -186,7 +186,7 @@ _Note_: Mercurial does not have a staging area.
 
 * visit link for more information https://www.mercurial-scm.org/doc/hg.1.html#strip
 
-\
+
 ## Mercurial Commit Message Format
 "Bug 1234567 - Implement feature XYZ. r=name,name2!"
 
@@ -200,7 +200,7 @@ _Note_: Mercurial does not have a staging area.
 
 _Note:_ The whole message must be enclosed in double quotations `"" ""`, single quotations and backticks will not work.
 
-\
+
 ## `hg status` Codes:
 
 `!` = Missing (deleted by non-hg command, but still tracked)
@@ -221,7 +221,7 @@ _Note:_ The whole message must be enclosed in double quotations `"" ""`, single 
 
 `R` = Removed
 
-\
+
 ## `hg wip` Indicators:
 `@` = current working directory/revision
 
@@ -237,7 +237,7 @@ Blue = public
 
 Magenta = user
 
-\
+
 ## Mercurial Terminology
 `repository` - A collection of revisions.
 
@@ -257,11 +257,11 @@ Magenta = user
 
 `patch` - All diffs between two revisions.
 
-\
+
 ## Arcanist Overview
 Arcanist is a wrapper script that sits on top of other tools (e.g., Differential, linters, unit test frameworks, git, Mercurial, and SVN) and provides a simple command-line API to manage code review and some related revision control operations.
 
-\
+
 ## Arcanist Commands
 
 **`arc help`**
@@ -297,7 +297,7 @@ Arcanist is a wrapper script that sits on top of other tools (e.g., Differential
 **`arc close-revision`**
 \- Closes a revision from the CLI without going through the web UI.
 
-\
+
 ## Phabricator Overview
 Phabricator supports two code review workflows, "review" (pre-push) and "audit" (post-push).
 
