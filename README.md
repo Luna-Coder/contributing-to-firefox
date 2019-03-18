@@ -231,13 +231,15 @@ patch - All diffs between two revisions.
 # Mercurial Commit Message Format #
 "Bug 1234567 - Implement feature XYZ. r=name,name2!"
 
-Bug 1234567 - The number of the bug in bugzilla.
+`Bug 1234567` - The number of the bug in bugzilla.
 
-- Implement feature XYZ. - The commit message.
+`- Implement feature XYZ.` - The commit message.
 
-r=name - The short form to request a review.
+`r=name` - The short form to request a review.
 
-! - This makes the review a blocking review.
+`!` - This makes the review a blocking review.
+
+_Note:_ The whole message must be enclosed in double quotations `"" ""`, single quotations and backticks will not work.
 
 
 # Phabricator Overview #
@@ -272,21 +274,35 @@ They specify who they want to review it. The change itself is called a "Differen
 # hg status codes: #
 
 ! = Missing (deleted by non-hg command, but still tracked)
+
 ? = Not tracked
+
 A = Added
+
 C = Clean
+
 D = Deleted
+
 I = Ignored
+
 M = Modified
+
 U = Unknown
+
 R = Removed
 
 # hg wip indicators: #
 @ = current working directory/revision
+
 Yellow Underline = bookmarks
+
 Yellow = branch/tag
+
 Green = draft
+
 Red = here
+
 Blue = public
+
 Magenta = user
 
