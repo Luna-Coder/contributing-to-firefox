@@ -1,5 +1,8 @@
 # contributing-to-firefox
 
+![conduit diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/Untitled%20Diagram.jpg "Diagram Text")
+
+
 **`hg add filename1 filename2`**
 \- Begin tracking changes to files or folders.
 
