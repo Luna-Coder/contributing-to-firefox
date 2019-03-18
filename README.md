@@ -20,6 +20,14 @@ Phabricator is a suite of web applications which make it easier to build softwar
 ### Differential: ###
 Differential is Phabricator’s code-review tool.
 
+## Mercurial Overview ##
+* Every working directory is paired with a private copy of the history.
+* The store contains the complete history of the project.
+* Mercurial considers the head with the highest revision number the tip of the repository.
+* Each unmerged branch creates a new head in the revision history.
+* When you commit, the state of the working directory relative to its parents is recorded as a new changeset (also called a new revision).
+
+# Frequently Used Mercurial Commands #
 
 **`hg add filename1 filename2`**
 \- Begin tracking changes to files or folders.
@@ -161,6 +169,25 @@ Differential is Phabricator’s code-review tool.
 
 * visit link for more information https://www.mercurial-scm.org/doc/hg.1.html#strip
 
+
+# Mercurial Terminology #
+repository - A collection of revisions.
+
+revision - A state of the repository at some point in time.
+
+changeset - Set of work changes saved as diffs
+
+changeset ID - A SHA-1 hash that uniquely identifies a changeset.
+
+diff - The difference between the contents and attributes of files in two changesets or a changeset and the current working directory.
+
+branch - A child changeset that has been created from a parent that is not a head.
+
+head - A changeset with no descendants on the same named branch.
+
+tip - The changeset with the highest revision number. It is the changeset most recently added in a repository.
+
+patch - All diffs between two revisions.
 
 \
 **`arc help`**
