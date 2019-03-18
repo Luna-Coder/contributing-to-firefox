@@ -322,3 +322,33 @@ They specify who they want to review it. The change itself is called a "Differen
     
 - Once everything is satisfied, some reviewer accepts the change and the author pushes it to the upstream.
 
+---
+## Links Used For This Guide
+
+https://docs.firefox-dev.tools/contributing/making-prs.html
+
+https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/How_to_Submit_a_Patch#Creating_a_patch
+
+https://moz-conduit.readthedocs.io/en/latest/walkthrough.html#
+
+https://moz-conduit.readthedocs.io/en/latest/arcanist-user.html#arcanist-user-guide
+
+https://medium.com/@prathikshagprasad/a-beginners-guide-to-mercurial-for-firefox-development-c17094c72c16
+
+https://kapeli.com/cheat_sheets/Mercurial.docset/Contents/Resources/Documents/index
+
+https://phabricator.services.mozilla.com/book/phabricator/article/arcanist/
+
+https://phabricator.services.mozilla.com/book/phabricator/article/arcanist_diff/
+
+https://phabricator.services.mozilla.com/book/phabricator/article/differential/
+
+https://phabricator.services.mozilla.com/book/phabricator/article/reviews_vs_audit/
+
+https://www.mercurial-scm.org/wiki/UnderstandingMercurial
+
+https://www.mercurial-scm.org/wiki/Tutorial
+
+https://phabricator.services.mozilla.com/book/phabricator/article/introduction/
+
+https://github.com/mozilla-conduit/review
