@@ -129,10 +129,10 @@ Note: Mercurial does not have a staging area.
 \
 **`hg rebase [-s <REV> | -b <REV>] [-d <REV>]`**
 
-* -s <REV> source flag used to rebase the specified changeset and descendants.
-* -b <REV> base flag used to rebase everything from branching point of specified changeset.
-* -r <REV> rev flag to signals to rebase these revisions.
-* -d <REV> destination flag to rebase onto the specified changeset.
+* `-s <REV>`, source flag used to rebase the specified changeset and descendants.
+* `-b <REV>`, base flag used to rebase everything from branching point of specified changeset.
+* `-r <REV>`, rev flag to signals to rebase these revisions.
+* `-d <REV>`, destination flag to rebase onto the specified changeset.
   
 \
 **`hg forget filename`**
@@ -189,21 +189,21 @@ Note: Mercurial does not have a staging area.
 # Mercurial Terminology
 repository - A collection of revisions.
 
-revision - A state of the repository at some point in time.
+`revision` - A state of the repository at some point in time.
 
-changeset - Set of work changes saved as diffs
+`changeset` - Set of work changes saved as diffs
 
-changeset ID - A SHA-1 hash that uniquely identifies a changeset.
+`changeset ID` - A SHA-1 hash that uniquely identifies a changeset.
 
-diff - The difference between the contents and attributes of files in two changesets or a changeset and the current working directory.
+`diff` - The difference between the contents and attributes of files in two changesets or a changeset and the current working directory.
 
-branch - A child changeset that has been created from a parent that is not a head.
+`branch` - A child changeset that has been created from a parent that is not a head.
 
-head - A changeset with no descendants on the same named branch.
+`head` - A changeset with no descendants on the same named branch.
 
-tip - The changeset with the highest revision number. It is the changeset most recently added in a repository.
+`tip` - The changeset with the highest revision number. It is the changeset most recently added in a repository.
 
-patch - All diffs between two revisions.
+`patch` - All diffs between two revisions.
 
 # Arcanist Overview
 Arcanist is a wrapper script that sits on top of other tools (e.g., Differential, linters, unit test frameworks, git, Mercurial, and SVN) and provides a simple command-line API to manage code review and some related revision control operations.
