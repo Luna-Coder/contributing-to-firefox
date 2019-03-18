@@ -2,9 +2,7 @@
 
 ## Introduction
 
-The purpose for this guide is to give new contributors a high-level overview of the various tools used to make contributions to the mozilla-central repository. 
-
-The motivation comes from the struggles I faced, and noticed others facing as well, during my application process for the Outreachy program with Mozilla. In an attempt to gather the most vital information in a concise manner, plenty detailed information will be missing. However, the links used to formulate this guide are included at the end and the user is encouraged to visit them for further information and clarifications.
+The purpose for this guide is to give new contributors a high-level overview of the various tools used to make contributions to the mozilla-central repository. The motivation comes from the struggles I faced, and noticed others facing as well, during my application process for the Outreachy program with Mozilla. In an attempt to gather the most vital information in a concise manner, plenty detailed information will be missing. However, the links used to formulate this guide are included at the end of this document and the user is highly encouraged to visit them for further information and clarifications.
 
 ---
 
