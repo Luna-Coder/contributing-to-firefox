@@ -18,7 +18,7 @@ Mercurial is a free, distributed source control management tool.
 Arcanist is the command-line interface to Phabricator, mainly used to submit patches for review via the Differential tool.
 
 ### moz-phab
-moz-phab is Mozilla's custom command-line tool that improves on Arcanist’s limited support for commit series, as well as providing other conveniences, including the parsing of bug IDs and reviewers from commit messages.
+`moz-phab` is Mozilla's custom command-line tool that improves on Arcanist’s limited support for commit series, as well as providing other conveniences, including the parsing of bug IDs and reviewers from commit messages.
 
 ### Phabricator
 Phabricator is a suite of web applications which make it easier to build software, particularly when working with teams. 
@@ -38,10 +38,9 @@ Coming from a git/GitHub workflow to the mercurial/arcanist/phabricator workflow
 
 It may be helpful to visualize it using the following diagram. 
 
-Note: Mercurial does not have a staging area.
-
 ![gitvsmercurial diagram](https://github.com/Luna-Coder/contributing-to-firefox/blob/master/gitvsmercurial.png "Diagram 2 Text")
 
+_Note_: Mercurial does not have a staging area.
 
 # Frequently Used Mercurial Commands
 
