@@ -185,6 +185,56 @@ _Note_: Mercurial does not have a staging area.
 
 * visit link for more information https://www.mercurial-scm.org/doc/hg.1.html#strip
 
+# Mercurial Commit Message Format
+"Bug 1234567 - Implement feature XYZ. r=name,name2!"
+
+`Bug 1234567` - The number of the bug in bugzilla.
+
+`- Implement feature XYZ.` - The commit message.
+
+`r=name` - The short form to request a review.
+
+`!` - This makes the review a blocking review.
+
+_Note:_ The whole message must be enclosed in double quotations `"" ""`, single quotations and backticks will not work.
+
+# `hg status` Codes:
+
+`!` = Missing (deleted by non-hg command, but still tracked)
+
+`?` = Not tracked
+
+`A` = Added
+
+`C` = Clean
+
+`D` = Deleted
+
+`I` = Ignored
+
+`M` = Modified
+
+`U` = Unknown
+
+`R` = Removed
+
+# `hg wip` Indicators:
+`@` = current working directory/revision
+
+Yellow Underline = bookmarks
+
+Yellow = branch/tag
+
+Green = draft
+
+Red = here
+
+Blue = public
+
+Magenta = user
+
+
+
 
 # Mercurial Terminology
 `repository` - A collection of revisions.
@@ -243,21 +293,6 @@ Arcanist is a wrapper script that sits on top of other tools (e.g., Differential
 **`arc close-revision`**
 \- Closes a revision from the CLI without going through the web UI.
 
-
-# Mercurial Commit Message Format
-"Bug 1234567 - Implement feature XYZ. r=name,name2!"
-
-`Bug 1234567` - The number of the bug in bugzilla.
-
-`- Implement feature XYZ.` - The commit message.
-
-`r=name` - The short form to request a review.
-
-`!` - This makes the review a blocking review.
-
-_Note:_ The whole message must be enclosed in double quotations `"" ""`, single quotations and backticks will not work.
-
-
 # Phabricator Overview
 Phabricator supports two code review workflows, "review" (pre-push) and "audit" (post-push).
 
@@ -286,39 +321,4 @@ They specify who they want to review it. The change itself is called a "Differen
 - In response to feedback, the author may update the change (e.g., fixing the bugs or addressing the problems).
     
 - Once everything is satisfied, some reviewer accepts the change and the author pushes it to the upstream.
-
-# `hg status` Codes:
-
-`!` = Missing (deleted by non-hg command, but still tracked)
-
-`?` = Not tracked
-
-`A` = Added
-
-`C` = Clean
-
-`D` = Deleted
-
-`I` = Ignored
-
-`M` = Modified
-
-`U` = Unknown
-
-`R` = Removed
-
-# `hg wip` Indicators:
-`@` = current working directory/revision
-
-Yellow Underline = bookmarks
-
-Yellow = branch/tag
-
-Green = draft
-
-Red = here
-
-Blue = public
-
-Magenta = user
 
