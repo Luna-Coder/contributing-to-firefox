@@ -273,26 +273,26 @@ They specify who they want to review it. The change itself is called a "Differen
 
 # hg status codes: #
 
-! = Missing (deleted by non-hg command, but still tracked)
+`!` = Missing (deleted by non-hg command, but still tracked)
 
-? = Not tracked
+`?` = Not tracked
 
-A = Added
+`A` = Added
 
-C = Clean
+`C` = Clean
 
-D = Deleted
+`D` = Deleted
 
-I = Ignored
+`I` = Ignored
 
-M = Modified
+`M` = Modified
 
-U = Unknown
+`U` = Unknown
 
-R = Removed
+`R` = Removed
 
 # hg wip indicators: #
-@ = current working directory/revision
+`@` = current working directory/revision
 
 Yellow Underline = bookmarks
 
