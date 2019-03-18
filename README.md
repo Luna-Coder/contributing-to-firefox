@@ -186,7 +186,7 @@ _Note_: Mercurial does not have a staging area.
 
 
 # Mercurial Terminology
-repository - A collection of revisions.
+`repository` - A collection of revisions.
 
 `revision` - A state of the repository at some point in time.
 
