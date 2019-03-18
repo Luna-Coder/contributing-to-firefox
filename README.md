@@ -1,6 +1,8 @@
 # contributing-to-firefox
 
-`hg add filename1 filename2`
+```bash
+hg add filename1 filename2
+```
 \- Begin tracking changes to files or folders.
 
 * Unlike git, in mercurial the `add` command is only used for *new* files, not files you want to begin tracking.
